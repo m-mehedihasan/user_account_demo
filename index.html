@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>User Profile</title>
+    <!-- reset css  -->
+    <link rel="stylesheet" href="css/reset.css">
+    <!-- custom  -->
+    <link rel="stylesheet" href="css/app.css">
+</head>
+
+<body>
+    <div class="main-container">
+        <!-- head section  -->
+        <section class="head">
+            <h1>User Profile</h1>
+
+        </section>
+        <!-- profile section  -->
+        <section class="profile">
+            <div class="avatar">
+                <img src="images/test_profile.svg" alt="user">
+            </div>
+            <div class="info">
+                <!-- username  -->
+                <p id="user_name">Test User</p>
+                <p id="user_status">
+                    <i class="fas fa-edit"></i> I am so busy.
+                </p>
+            </div>
+        </section>
+        <!-- bio section  -->
+        <section class="bio">
+            <div class="title">
+                <h4>Bio</h4>
+            </div>
+            <div class="desc-area">
+                <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto magni, dignissimos eius pariatur
+                    cupiditate inventore molestias dicta dolorem quae debitis explicabo doloremque accusantium, quo
+                    doloribus deserunt iste sequi obcaecati. Incidunt voluptates quo adipisci nihil, sint atque,
+                    aspernatur unde alias facere quos suscipit iusto veniam sed autem. Eos nobis doloribus
+                    exercitationem recusandae alias tempora iusto, a perferendis debitis architecto nihil deleniti odit
+                    facere. Non, eligendi? Veniam unde maxime commodi optio praesentium accusantium laudantium, laborum
+                    nulla doloremque inventore nam saepe ipsum molestiae quos quod nemo. Corrupti ipsum praesentium
+                    dignissimos, deserunt ipsa reiciendis eveniet beatae atque possimus iusto, sed aliquid. Blanditiis,
+                    aspernatur doloribus beatae earum minus eaque aliquid laboriosam alias deleniti provident tempora
+                    sunt. Magnam odio iure ut eligendi, repellat vero officia magni beatae repellendus quia animi
+                    perspiciatis nemo blanditiis ullam soluta itaque! Ipsum numquam, sunt nulla dolorem dicta aperiam
+                    impedit! Quos, odio culpa? Impedit voluptatem, inventore laborum voluptates, nobis neque excepturi
+                    corporis aspernatur dicta earum alias saepe vel sed labore at asperiores! Laboriosam ipsa, esse
+                    consequuntur magni quod doloremque non aliquid corporis, repellat cupiditate culpa. Ratione
+                    necessitatibus pariatur voluptatibus cupiditate natus quas debitis molestias totam iste ex et
+                    reprehenderit assumenda nisi quo, beatae vel iusto dolore voluptatum, possimus impedit voluptas nemo
+                    eveniet modi placeat. Omnis itaque ullam laborum quisquam! Unde maxime accusantium et quidem
+                    consectetur atque veniam at maiores mollitia doloribus? Blanditiis tenetur impedit temporibus vitae
+                    odio suscipit ullam iste maiores incidunt, id vero saepe perferendis autem nihil beatae magnam velit
+                    optio voluptas laboriosam quibusdam cumque cum molestias dolorem voluptate? Possimus earum dicta
+                    perspiciatis beatae quaerat id labore accusantium, placeat ex quia dolore nisi in provident eius
+                    consequatur. Odit quod animi necessitatibus corrupti fugit ratione maxime amet est, expedita optio
+                    fugiat ea ipsa iste nulla, quaerat consequuntur deserunt. Illo culpa numquam nesciunt, odit magnam,
+                    quis, praesentium ab explicabo ipsa ex architecto. Iusto laborum consequuntur, quam tenetur
+                    explicabo ad unde totam amet autem adipisci id officia, mollitia officiis quidem ducimus. In cumque,
+                    veniam esse, animi nesciunt itaque perspiciatis nam corporis repellat aperiam dolorum fuga
+                    voluptatibus consequuntur velit eveniet quasi est ea ab reiciendis id ut. Dolores id iste tempora
+                    dicta, ipsum suscipit et incidunt, explicabo excepturi tenetur, accusamus ex a fugit fuga pariatur
+                    neque. Numquam saepe doloremque quae, deserunt earum autem voluptas repellat recusandae quos omnis,
+                    at a inventore in. Ducimus possimus officia maiores eaque debitis dolore consectetur! Delectus nam
+                    dicta minima, id accusantium quaerat quasi deserunt autem ratione assumenda, eos quo ad tenetur
+                    obcaecati debitis repudiandae officia, excepturi architecto laboriosam molestias totam rem esse
+                    nostrum? Impedit, optio culpa, nesciunt facilis quasi qui accusamus corrupti vitae nam similique
+                    exercitationem aperiam excepturi, voluptas odio eum libero! Illo distinctio debitis ut ratione! Sit
+                    repellendus, dolorum possimus alias laudantium quam corrupti assumenda neque ab voluptatem voluptas
+                    ut esse expedita quaerat officiis eum enim eius. Adipisci vero nostrum culpa illo qui quae similique
+                    harum eaque ut accusantium consectetur et repellat debitis animi ducimus aspernatur reprehenderit
+                    laborum, corrupti a consequatur? Veritatis odit deserunt, fugiat esse ratione magnam? Dolore officia
+                    odit saepe quam sit molestias quia quod provident tempore.
+                </p>
+            </div>
+        </section>
+        <!-- footer section  -->
+        <section class="footer">
+            <p>
+                E-mail: useraccount@gmail.com &copy;UserAccount <span id="current_year"></span>
+            </p>
+        </section>
+    </div>
+</body>
+<!-- jQuery-3 -->
+<script src="js/jQuery-3.6.0.js"></script>
+<!-- custom  -->
+<script>
+
+    let main = function () {
+        let cy_place = document.querySelector("#current_year");
+        let date = new Date();
+        cy_place.innerText = date.getFullYear();
+
+    };
+
+    $(document).ready(main);
+
+</script>
+
+
+
+</html>

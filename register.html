@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>User Registration</title>
+    <!-- reset  -->
+    <link rel="stylesheet" href="css/reset.css">
+    <!-- custom css  -->
+    <link rel="stylesheet" href="css/login.css">
+</head>
+
+<body>
+    <div class="container">
+        <div class="form-container">
+            <!-- head section  -->
+            <section class="head">
+                <h1>Registration</h1>
+                <div class="avatar">
+                    <img src="images/avatar.svg" width="50" alt="avatar">
+                </div>
+                <div class="warn"></div>
+            </section>
+            <!-- form input section  -->
+            <section class="form-input">
+
+                <form method="POST" class="form1" name="form2">
+                    <!-- user full name  -->
+                    <div class="field">
+                        <label for="id_name">
+                            Enter your full name
+                        </label>
+                        <input type="text" name="name" id="id_name" class="input">
+                    </div>
+
+                    <!-- user name  -->
+                    <div class="field">
+                        <label for="id_username">
+                            Enter your username
+                        </label>
+                        <input type="text" name="username" id="id_username" class="input">
+                    </div>
+                    <!-- password field  -->
+                    <div class="field">
+                        <label for="id_password1">
+                            Choose a password 
+                        </label>
+                        <input type="password" name="password1" id="id_password1" class="input">
+                    </div>
+                    <!-- cofirm password field  -->
+                    <div class="field">
+                        <label for="id_password2">
+                           Confirm the password 
+                        </label>
+                        <input type="password" name="password2" id="id_password2" class="input">
+                        <span id="conf_error"></span>
+                    </div>
+                    <div style="display: inline;">
+                        <input type="checkbox" name="showpassword" id="id_showpassword"> 
+                        <label for="id_showpassword">Show password</label>
+                    </div>
+                    <!-- button field  -->
+                    <div class="field">
+                        <button type="submit">
+                            Sign up
+                        </button>
+                    </div>
+                </form>
+
+            </section>
+            <!-- end of form-input section  -->
+            <section class="promot">
+                <p>
+                    Already Have an account ? <a href="login.html">
+                        Log in
+                    </a>
+                </p>
+            </section>
+        </div>
+    </div>
+
+</body>
+<!-- jQuery-3 -->
+<script src="js/jQuery-3.6.0.js"></script>
+<!-- custom js  -->
+<script src="js/register.js"></script>
+
+</html>

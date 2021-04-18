@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>User Login</title>
+    <!-- reset  -->
+    <link rel="stylesheet" href="css/reset.css">
+    <!-- custom css  -->
+    <link rel="stylesheet" href="css/login.css">
+</head>
+
+<body>
+    <div class="container">
+        <div class="form-container">
+            <!-- head section  -->
+            <section class="head">
+                <h1>Login</h1>
+                <div class="avatar">
+                    <img src="images/avatar.svg" width="50" alt="avatar">
+                </div>
+                <div class="warn"></div>
+            </section>
+            <!-- form input section  -->
+            <section class="form-input">
+                
+                <!-- loading animation  -->
+                <div class="loading">
+                    <h3><span>Login Success !</span>
+                     Redirecting... 
+                    </h3>
+                    <img src="images/gear.svg" alt="gear">
+
+                </div>
+                <form method="POST" class="form1" name="form1">
+                    <!-- user name  -->
+                    <div class="field">
+                        <label for="id_username">
+                            Enter your username 
+                        </label>
+                        <input type="text" name="username" id="id_username" class="input">
+                    </div>
+                    <!-- password field  -->
+                    <div class="field">
+                        <label for="id_password">
+                            Enter your password
+                        </label>
+                        <input type="password" id="id_password" class="input">
+                    </div>
+                    <!-- button field  -->
+                    <div class="btn_field">
+                        <a href="#">Forgot Password ?</a>
+                        <button type="submit">
+                            Sign in
+                        </button>
+                    </div>
+                </form>
+
+            </section>
+            <!-- end of form-input section  -->
+            <section class="promot">
+                <p>
+                    Create Account ? <a href="register.html">
+                        Sign up
+                    </a>
+                </p>
+            </section>
+        </div>
+    </div>
+
+</body>
+<!-- jQuery-3 -->
+<script src="js/jQuery-3.6.0.js"></script>
+<!-- custom js  -->
+<script src="js/login.js"></script>
+
+</html>

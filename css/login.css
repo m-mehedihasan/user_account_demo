@@ -1,0 +1,164 @@
+.container {
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.form-container {
+    border: 2px solid #d9d9d9;
+    width: 300px;
+    min-height: 400px;
+    box-shadow: 1px 2px 1px #d9d9d9;
+    background-color: #ffffff;
+}
+
+.head h1 {
+    background-color: #2d8a52;
+    text-align: center;
+    color: #ffffff;
+    text-transform: uppercase;
+    letter-spacing: 4px;
+    padding: .3em;
+}
+
+.head .avatar {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.head .avatar img {
+    width: 60px;
+    height: 60px;
+    margin: .5em;
+}
+
+.head .warn {
+    margin: .3em;
+    text-align: center;
+    background-color: #ed473b;
+    color: #ffffff;
+    font-size: .9em;
+    visibility: hidden;
+}
+
+.form-input form {
+    margin: .3em;
+    padding: .3em;
+}
+
+.form-input form .field {
+    display: flex;
+    flex-direction: column;
+    margin: .2em 0em;
+}
+
+.form-input form .field .input {
+    width: 100%;
+    font-size: 1.1em;
+    padding: .3em;
+    border: 1px solid #d9d9d9;
+    outline: none;
+}
+
+.form-input form .btn_field button,
+.field button {
+    background-color: #264773;
+    color: #ffffff;
+    border-radius: 5px;
+    border: none;
+    outline: none;
+    font-size: 1.1em;
+    padding: .2em;
+    cursor: pointer;
+}
+
+.form-input form .btn_field {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    padding: .3em 0em;
+}
+
+.form-input form .btn_field a {
+    text-decoration: none;
+    color: #04a4c4;
+}
+
+.form-input form .btn_field a:hover {
+    text-decoration: underline;
+}
+
+
+#conf_error {
+    background: #f07168;
+    color: #ffffff;
+    text-align: center;
+    margin: .3em 0em;
+    display: none;
+}
+
+
+
+.promot p {
+    margin: .5em;
+    color: #264773;
+    font-style: italic;
+}
+
+.promot a {
+    text-decoration: none;
+    color: #2e2c2c93;
+    border: 2px solid #2d8a52;
+    padding: .2em;
+    border-radius: 5px;
+    margin: 0em .5em;
+    font-style: normal;
+}
+
+.promot a:hover {
+    background-color: #2d8a52;
+    color: #ffffff;
+}
+
+.loading {
+    display: none;
+    text-align: center;
+}
+
+.loading h3 {
+    text-transform: capitalize;
+    color: orange;
+}
+
+.loading h3 span {
+    color: green;
+}
+
+.loading img {
+    width: 100px;
+    margin: 2em;
+    text-align: center;
+}
+
+/* Js functionality */
+.loading_animation img {
+    display: block;
+    border-radius: 100px;
+    animation-name: load;
+    animation-timing-function: linear;
+    animation-duration: 2s;
+}
+
+@keyframes load {
+    from {
+        transform: rotate(0deg);
+    }
+
+    to {
+        transform: rotate(360deg);
+    }
+}

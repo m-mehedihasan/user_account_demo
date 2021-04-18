@@ -1,0 +1,157 @@
+
+
+body {
+    min-height: 100vh;
+}
+
+.main-container {
+    display: grid;
+    grid-template-columns: 1fr;
+    margin: 0px 25px;
+
+}
+
+.head {
+    background-color: #13803b;
+    padding: .8em 0;
+
+}
+.head h1 {
+    color: #ffffff;
+    text-align: center;
+    letter-spacing: 5px;
+    text-transform: uppercase;
+}
+
+.profile {
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    grid-gap: 5px;
+    padding: 5px;
+}
+
+.profile .avatar {
+    grid-column: 10/11;
+}
+
+.profile .avatar img {
+    width: 100px;
+    height: 100px;
+    border-radius: 100px;
+}
+
+.profile .info {
+    grid-column: 11/13;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.profile .info #user_name {
+    color: #0f50bf;
+    letter-spacing: 2px;
+    font-size: 1.2em;
+    font-weight: 600;
+    margin-bottom: 15px;
+}
+
+.profile .info #user_status {
+    color: #06bdb0;
+}
+
+.bio {
+    width: 100%;
+    min-height: 400px;
+}
+
+.bio .title {
+    width: 100%;
+    height: 50px;
+    text-align: center;
+    text-transform: uppercase;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.bio .title h4 {
+    background-color: #f5f1f1;
+    width: 100px;
+    height: 50px;
+    line-height: 50px;
+    text-align: center;
+    border-top: 2px solid #08833f;
+    border-right: 2px solid #5e5a5a;
+    border-left: 2px solid #5e5a5a;
+
+}
+
+.bio .desc-area {
+    background-color: #f5f1f1;
+    color: #061424;
+    padding: 10px;
+}
+
+.bio .desc-area p {
+    text-align: justify;
+    text-transform: capitalize;
+
+}
+
+.footer {
+    background-color: #1f3f69;
+    width: 100%;
+    height: 30px;
+    line-height: 30px;
+    text-align: center;
+}
+.footer p {
+    color: #ffffff;
+}
+
+@media screen and (max-width: 1024px) {
+    .profile {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .head h1 {
+        font-size: 1em;
+    }
+
+    .profile .info #user_name {
+        font-size: 1em;
+    }
+    .profile .info #user_status {
+        font-size: .8em;
+    }
+
+    .bio .title {
+        height: 25px;
+    }
+    .bio .title h4 {
+        width: 80px;
+        height: 25px;
+        line-height: 25px;
+        font-size: .8em;
+    }
+
+    .bio .title .desc-area {
+        font-size: .875em;
+    }
+
+    .footer {
+        height: 30px;
+    }
+    .footer p {
+        font-size: .5em;
+    }
+
+}
